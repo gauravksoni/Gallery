@@ -1,0 +1,119 @@
+* {
+    padding:0;
+    margin:0;
+}
+
+html{
+  font:14px normal Arial, sans-serif;
+  color:#626771;
+  background-color:#fff;
+}
+
+body{
+  padding:60px;
+  text-align: center;
+}
+
+h1{
+  font-size:18px;
+  margin-bottom:20px;
+}
+
+.app-head{
+  background-color: cadetblue;
+  height: 90px;
+  padding: 20px;
+  color: white;
+  width: 100%;
+  font-size: x-large;
+  line-height: 4em;
+}
+
+.gallery{
+  width: 80%;
+  margin: 0 auto;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.gallery-tiles{
+  width: 20em;
+  height: 13em;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  top: 4em;
+  box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+  margin: 0px 47px 69px;
+  cursor: pointer;
+}
+.gallery-tiles:hover{
+  box-shadow: rgba(0, 0, 0, 0.117647) 10px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+}
+.gallery-tiles-image{
+  width: 12em;
+  height: 9em;
+  margin: 2em;
+}
+.gallery-tiles-image-info{
+  background-color: rgba(28, 32, 41, 0.62);
+  position: relative;
+  top: -13.2rem;
+  height: 13em;
+}
+
+.process{
+  position: relative;
+  z-index: 1;
+  top: -11rem;
+  width: 20em;
+  height: 9em;
+}
+
+h1{
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background: rgba(220, 98, 38, 0.8);
+}
+p{
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 12px;
+  position: relative;
+  color: #fff;
+  padding: 10px 20px 20px;
+  text-align: center;
+}
+.slideRight{
+	-webkit-animation-name: slideRight;
+
+	-webkit-animation-duration: 1s;
+
+	-webkit-animation-timing-function: ease-in-out;
+}
+
+
+@-webkit-keyframes slideRight {
+	0% {
+		-webkit-transform: translateX(-150%);
+	}
+	50%{
+		-webkit-transform: translateX(8%);
+	}
+	65%{
+		-webkit-transform: translateX(-4%);
+	}
+	80%{
+		-webkit-transform: translateX(4%);
+	}
+	95%{
+		-webkit-transform: translateX(-2%);
+	}
+	100% {
+		-webkit-transform: translateX(0%);
+	}
+}
